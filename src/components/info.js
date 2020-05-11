@@ -1,5 +1,5 @@
 // JavaScript Document
-
+import './button.css';
 import React from 'react';
 
 class Info extends React.Component {

@@ -1,4 +1,6 @@
+
 // JavaScript Document
+
 
 import React from 'react';
 
@@ -7,7 +9,7 @@ class QuoteShow extends React.Component {
         return(
         
             <div>
-            {this.props.quote }
+            <h3> {this.props.quote } </h3>
             </div>
             
         );

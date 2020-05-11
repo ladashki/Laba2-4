@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+button {
+    width: 150px;
+    background:hsla(211,90%,69%,1.00);
+    background: linear-gradient(to bottom, hsla 0%, #FFE4E1 50%, hsla 100%);
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #000;
+    border: 4px double #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px lightgray;
+    position: absolute; /* Абсолютное позиционирование */
+   left: 40%;
+   
+}
+
+
+H3{
+    position: absolute; /* Абсолютное позиционирование */
+    top: 35px;
+    left: 5%;
+    text-align: center;
+}
