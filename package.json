@@ -13,14 +13,14 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "style-loader": "^1.2.1",
-    "webpack-dev-server": "^3.10.3"
+    "style-loader": "^1.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "webpack --mode=production",
-     "test": "react-scripts test",
-    "teste2e": "./node_modules/.bin/cypress run",
+    "build": "react-scripts build",
+    "build:web": "webpack --mode=production",
+    "test": "npm run cy:run --spec 'cypress/integration/*.js'",
+    "cy:run": "cypress run",
     "test:open": "cypress open",
     "eject": "react-scripts eject",
     "lint": "eslint ./src/*.{js,jsx}"
@@ -50,9 +50,10 @@
     "babel-loader": "^8.1.0",
     "babel-preset-react": "^6.24.1",
     "cypress": "^4.5.0",
-    "eslint": "^7.0.0",
+    "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.20.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "3.10.3"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
