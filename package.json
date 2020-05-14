@@ -19,7 +19,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "webpack --mode=production",
-    "test": "cypress open",
+     "test": "react-scripts test",
+    "teste2e": "./node_modules/.bin/cypress run",
+    "test:open": "cypress open",
     "eject": "react-scripts eject",
     "lint": "eslint ./src/*.{js,jsx}"
   },
