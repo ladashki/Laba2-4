@@ -19,7 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:web": "webpack --mode=production",
-  "test": "react-scripts test",
+    "test": "react-scripts test",
     "test:open": "cypress open",
     "eject": "react-scripts eject",
     "lint": "eslint ./src/*.{js,jsx}"
@@ -51,6 +51,7 @@
     "cypress": "^4.5.0",
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.20.0",
+    "jest": "^24.9.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "3.10.3"
   },
