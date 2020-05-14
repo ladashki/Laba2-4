@@ -7,7 +7,7 @@ class Info extends React.Component {
         return(
         <form onSubmit={this.props.quoteMethod} > 
             
-            <button> refresh </button>
+           
         </form>    
         );
     }
