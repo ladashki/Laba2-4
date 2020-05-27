@@ -16,7 +16,7 @@
     "style-loader": "^1.2.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node ./server.js",
     "build": "react-scripts build",
     "build:web": "webpack --mode=production",
     "test": "react-scripts test",
