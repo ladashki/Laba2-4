@@ -2,6 +2,7 @@ import React from 'react';
 import Info from "./components/info";
 import QuoteShow from "./components/quote";
 //import './App.css';
+const port = process.env.PORT || 3000;
 
 
 
