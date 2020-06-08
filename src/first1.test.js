@@ -1,10 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import Adapter from 'enzyme-adapter-react-16';
+import { shallow, configure } from 'enzyme';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+configure({ adapter: new Adapter() });
+
+
+describe('indirectly testing click simulation', () => {
+  it('should ', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.state('quote')).toBe(null);
+  });
 });
