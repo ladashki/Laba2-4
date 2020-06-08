@@ -3,30 +3,33 @@ import Info from "./components/info";
 import QuoteShow from "./components/quote";
 //import './App.css';
 
-
-
 class App extends React.Component {
     
-    state={ quote: undefined }
+   // state={ quote: undefined }
+
+ constructor(){
+    super();
+    this.state = { quote: null };
+}   
     
-  
-getting_quote = async(e) => {
+    
+getQuote = async(e) => {
     e.preventDefault();
     const api_url = await fetch("https://api.kanye.rest")
     const data = await api_url.json();
     console.log(data);
     
-    
     this.setState({
        quote:  data.quote
     });
-}    
-    
+}
+
+
     render(){
         return(
         <div> 
-          <Info quoteMethod={this.getting_quote} />  
-            <QuoteShow quote={this.state.quote} />  
+          <Info quoteMethod={this.getQuote} />          
+           <QuoteShow quote={this.state.quote} />  
         </div>
 
         );
@@ -34,4 +37,29 @@ getting_quote = async(e) => {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
